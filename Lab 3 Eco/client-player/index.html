@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel o Tijera</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #data-container {
+        margin-top: 20px;
+      }
+      .item {
+        margin-bottom: 10px;
+      }
+      #timer {
+        font-size: 20px;
+        margin-top: 10px;
+        color: red;
+      }
+      img {
+        width: 30px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Piedra, Papel o Tijera</h1>
+    <input type="text" id="player-name" placeholder="Tu nombre" />
+    <select id="player-move">
+      <option value="piedra">Piedra</option>
+      <option value="papel">Papel</option>
+      <option value="tijera">Tijera</option>
+    </select>
+    <button id="submit-move">Enviar Jugada</button>
+    <div id="timer">Tiempo restante: 10</div>
+    <div id="data-container"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
